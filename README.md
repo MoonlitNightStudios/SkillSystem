@@ -11,7 +11,7 @@ The skill system plugin is being used in our projects and any improvements we ma
 1. Right click on the content browser and under the skill system category select skill tree.
 1. Skill graphs have a default root node. We plan on adding support to adding root nodes since some games could use skill trees with multiple root nodes. Right click to add a **Skill** node.
 1. Set the skill node widget class in details panel. This widget class needs to implement ISkillNodeWidgetInterface. Each skill node allows overriding this widget class.
-1. Set the widget class for the skill tree.
+1. Set the widget class for the root node.
 1. Set the connection drawing policy. The plugin provides a default policy that just draws lines between connected nodes. We intend to add more.
 
 # Highlights
