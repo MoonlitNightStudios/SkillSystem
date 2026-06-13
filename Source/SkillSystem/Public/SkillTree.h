@@ -49,7 +49,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Node")
 	TSubclassOf<UUserWidget> RootWidget;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Node", meta = (MustImplement = "SkillNodeWidgetInterface"))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Node", meta = (MustImplement = "/Script/SkillSystem.SkillNodeWidgetInterface"))
 	TSubclassOf<UUserWidget> DefaultSkillWidget;
 
 	UPROPERTY(EditAnywhere, Instanced, Category = "Debug")

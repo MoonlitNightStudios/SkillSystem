@@ -39,7 +39,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Skill")
 	TSoftObjectPtr<UStreamableRenderAsset> SkillIcon;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Visual", meta = (MustImplement = "SkillNodeWidgetInterface"))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Visual", meta = (MustImplement = "/Script/SkillSystem.SkillNodeWidgetInterface"))
 	TSubclassOf<UUserWidget> SkillWidgetOverride;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Node")
