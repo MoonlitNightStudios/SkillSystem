@@ -95,7 +95,7 @@ void FSkillTreeEditorMode::Init(USkillTree* InSkillTree)
 
 void FSkillTreeEditorMode::RegisterTabFactories(TSharedPtr<class FTabManager> InTabManager)
 {
-	FApplicationMode::RegisterTabFactories(InTabManager);
+	RegisterTabFactoriesWithAppAndManager(GetHost().Get(), InTabManager.ToSharedRef());
 
 	WorkspaceMenuCategory = InTabManager->AddLocalWorkspaceMenuCategory(LOCTEXT("SkillTreeEditorMenuCategoryName", "Skill Tree Editor"));
 
